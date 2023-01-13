@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="../styles/admiDash.css">
+    <link rel="stylesheet" href="../styles/modalADM.css">
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+  />
+    <title>Kenzie Empresas</title>
+</head>
+<body>
+    <header>
+        <div class="conteiner_header">
+            <div>
+                <div class="box__purple"></div>
+                <h1>Kenzie Empresas</h1>
+            </div>   
+            <div class="ferramenta">
+                <img id="menuDeFerramentas"src="../assets/menu_FILL0_wght400_GRAD0_opsz48 1.png" alt="Menu de ferramentas">
+                <a href="" class="botton_login">Logout</a>
+            </div>
+        </div>
+        <div class="conteiner__menu"></div>
+    </header>
+    <main>
+        <div class= "conteiner__deparetamento">
+            <h2>Departamentos</h2>
+            <select value="" class="select__empresa">
+                <option value="">Selecionar Empresa</option>
+            </select>
+            <div class="button__criar">
+                <button class="button__criar--departamento">
+                    <img src="../assets/plus.png" alt="Plus">
+                    Criar
+                </button>
+            </div>
+        </div>
+        <ul class="lista__departamento"></ul>
+        <dialog class="modal__Visualizar"></dialog> 
+        <dialog class="modal__editar--descricao"></dialog>
+        <dialog class="modal__criar--departamento">
+            <div class="modal__body">
+                <span class="fechar__criarDepartamento">X</span>
+                <h4>Criar Departamento</h4>
+                <form>
+                    <input id="name" type="text" placeholder="Nome do departamento" required>
+                    <input id="descricao" type="text" placeholder="Descrição" required>
+                    <select id="selecaoDeEmpresa" value="">
+                        <option value="">Selecionar empresa</option>
+                    </select>
+                    <button class="button__enviar--departamento">Criar o departamento</button>
+                </form>
+            </div>
+        </dialog>
+        <dialog class="modal__delete--departamento"></dialog>
+        <dialog class="modal__editar--user">
+            <div class="corpo__modal--editarUser">
+                <span class="fechar__editarUser" >X</span>
+                <h4>Editar Usuário</h4>
+                <select id="modalidade" value="">
+                    <option value="">Selecionar modalidade de trabalho</option>
+                    <option value="presencial">Presencial</option>
+                    <option value="home office">Home office</option>
+                </select>
+                <select id="nivelProfissional" value="">
+                    <option value="">Selecionar nível profissional</option>
+                    <option value="estágio">Estágio</option>
+                    <option value="júnior">Júnior</option>
+                    <option value="pleno">Pleno</option>
+                    <option value="sênior">Sênior</option>
+                </select>
+                <button class="button__editar--user">Editar</button>
+            </div>
+        </dialog>
+        <dialog class="modal__delete--user"></dialog>
+        <h2 class="title__usuario">Usuários cadastrados</h2>
+        <ul class="lista__user"> </ul>
+    </main>
+    <script type="module" src="../scripts/admiDash.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>

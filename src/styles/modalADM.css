@@ -1,0 +1,243 @@
+
+.conteiner__modal{
+    width: 700px;
+    height: 500px;
+}
+.fechar__modal{
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.conteiner__modal > h4{
+    font-size: 36px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.corpo{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-left: 30px;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+.cabecalho > h5{
+    font-size: 20px;
+    font-weight: bold;
+}
+.cabecalho > p{
+    margin-top: 20px;
+    font-size: 18px;
+}
+.contratar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.contratar > select{
+    width: 380px;
+    height: 50px;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 50%);
+    padding-left: 10px;
+}
+.contratar > button{
+    width: 150px;
+    height: 48px;
+    background-color: #4BA036;
+    border: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.conteiner__modal > ul{
+    background-color: #F8F8F8;
+    width: 100%;
+    height: 300px;
+    overflow-x: scroll;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+}
+
+.conteiner__modal > ul > li{
+    background-color: #ffffff;
+    min-width: 300px;
+    height: 170px;
+    border-bottom: 1px solid #4200FF;
+}
+.conteiner__modal > ul > li > h6{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top:20px;
+    margin-left: 15px;
+}
+.nivel, .email{
+    font-size: 18px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.conteiner__modal > ul > li > button{
+    margin-left:70px;
+    margin-top: 15px;
+    width: 157px;
+    height: 48px;
+    background-color: #ffffff;
+    border: 2px solid #CE4646;
+    color: #CE4646;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.corpo__modal{
+    width: 500px;
+    height: 330px;
+}
+.corpo__modal >  h4, .modal__body > h4 {
+    font-size: 45px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+.corpo__modal > span, .modal__body > span{
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
+    font-size: 30px;
+    margin-top: -40px;
+    cursor: pointer;
+}
+.corpo__modal > form, .modal__body > form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    align-items: center;
+}
+.corpo__modal > form > textarea{
+    height: 110px;
+    width: 90%;
+    resize: none;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.corpo__modal > form > button{
+    width: 90%;
+    height: 48px;
+    background-color: #4200FF;
+    border: none;
+    color: #ffffff;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.modal__body{
+    width: 500px;
+    height: 400px;
+}
+.modal__body > form > input{
+    width: 90%;
+    height: 50px;
+    margin-bottom: 20px;
+    font-size: 17px;
+    padding-left: 10px
+}
+.modal__body > form > select{
+    width: 93%;
+    height: 50px; 
+    margin-bottom: 20px;
+    font-size: 17px;
+    padding-left: 10px
+}
+.modal__body > form > button{
+    width: 90%;
+    height: 50px;
+    background-color: #4200FF;
+    border: none;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.modal__delete--departamento > div, .corpo__modal--delete{
+    width: 800px;
+    height: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.modal__delete--departamento > div > h4, .corpo__modal--delete > h4{
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 50px;
+    margin-left: 40px;
+}
+.modal__delete--departamento > div > span, .corpo__modal--editarUser > span, .corpo__modal--delete > span{
+    position: absolute;
+    right: 0;
+    top: 20px;
+    margin-right: 30px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.modal__delete--departamento > div > button, .corpo__modal--delete > button{
+    height: 80px;
+    width: 90%;
+    margin-top: 60px;
+    background-color: #4BA036;
+    color: #ffffff;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.corpo__modal--editarUser{
+    width: 500px;
+    height: 340px;
+}
+.corpo__modal--editarUser > h4{
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 40px;
+}
+.corpo__modal--editarUser > select{
+    height: 70px;
+    width: 90%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 17px;
+    padding-left: 10px;
+    color: rgba(0, 0, 0, 50%);
+}
+.corpo__modal--editarUser > button{
+    height: 70px;
+    width: 90%;
+    margin-left: 20px;
+    background-color: #4200FF;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}

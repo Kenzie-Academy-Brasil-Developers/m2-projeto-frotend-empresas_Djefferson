@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+header{
+    border-bottom: 1px solid rgba(0, 0, 0, 20%);
+    padding-bottom: 30px;   
+    justify-content: center;
+    position:fixed;
+    width: 100vw;
+    top:0;
+    background-color: #ffffff;
+    left: 0;
+    z-index: 2;
+}
+.conteiner_header > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.conteiner_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px 25px 0px 25px ;
+}
+h1{
+    font-weight: bold;
+    font-size: 15px;
+}
+.box__purple {
+    width: 11px;
+    height: 11px;
+    background-color: #4200FF;
+    border-radius: 50px;
+    opacity: 50%;
+ }
+ .ferramenta > img{
+    cursor: pointer;
+ }
+.ferramenta > a{
+    width: 142px;
+    height: 48px;
+    border:  1px solid #4200FF;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    display: none;
+}
+.botton_login{
+    color: #4200FF;
+}
+.botton_cadastrar{
+    color: #ffffff;
+    background-color: #4200FF;
+
+}
+.menu{
+    display: flex;
+    gap:10px;
+    justify-content: center;
+    margin-top: 25px;
+}
+.menu > a {
+    width: 142px;
+    height: 48px;
+    border:  1px solid #4200FF;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex; 
+   
+}
+.conteiner{
+    margin: 0 20px ;
+}
+main > img{
+    display: none;
+}
+.header__list{
+    background-color: #4200FF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 52px;
+    min-width: 331px;
+    margin: 0 auto;
+    margin-top: 100px;
+    color: #ffffff;
+    font-size: 18px;
+    padding-left:80px;
+    font-weight: 500;
+}
+.header__list > img{
+    position: absolute;
+    right: 30px;
+
+}
+.header__list > h2{
+    color: #ffffff;
+    font-family: 18px; 
+}
+.lista_empresas{
+    background-color: #F8F8F8;
+    height:332px;
+    min-width: 301px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    overflow-y: scroll;
+    padding: 0 15px;
+} 
+
+.lista_empresas > li{
+    min-width: 241px;
+    height: 211px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #4200FF;
+}
+.lista_empresas > li > h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 90px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.lista_empresas > li > p {
+    margin-left: 15px;
+    font-size: 16px;
+
+}
+.lista_empresas > li > div{
+    margin-left: 15px;
+    color: #4200FF;
+    border: 1px solid #4200FF;
+    border-radius: 20px;
+    padding: 6px;
+    margin-top: 15px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+@media(min-width: 900px){
+    .conteiner_header{
+        margin: 32px 140px 0px 140px;
+    }
+    h1{
+        font-size: 21px;
+    }
+    .box__purple{
+        width: 16px;
+        height: 16px;
+    }
+    .ferramenta > img{
+        display: none;
+    }
+    .ferramenta > a {
+        display: flex ;
+    }
+    main{
+        display: flex;
+        flex-direction: row;
+        max-width: 1160px;
+        margin: 70px auto;
+        justify-content: space-between;
+    }
+    main > img{
+        display: block;
+        margin-top: 100px;
+    }
+    .header__list{
+        width: 550px;
+        padding-left:170px;
+        font-size: 20px;
+    }
+    .lista_empresas{
+        flex-direction: column;
+        overflow-y: none;
+        height: 700px;
+        width: 520px;
+        padding-top: 15px;
+    }
+    .lista_empresas > li{
+        width: 489px;
+        height: 135px;
+    }
+    .lista_empresas > li > h3{
+        margin-bottom: 22px;
+    }
+    .lista_empresas > li > div{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+}

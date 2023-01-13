@@ -1,0 +1,24 @@
+#nivel{
+    width: 90%;
+    height: 52px;
+}
+.conteiner__login{
+    width: 100vw;
+    height: 575px;
+    background-color: rgba(255, 255, 255, 95%);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 120px;
+    bottom: 0;
+}
+#retorna{
+    cursor: pointer;
+}
+@media(min-width:900px){
+    .conteiner__login{
+        width: 506px;
+        margin: 0 auto;
+        top: 300px;
+    }
+}

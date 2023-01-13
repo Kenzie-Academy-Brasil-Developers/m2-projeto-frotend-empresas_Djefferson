@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="../styles/userDash.css">
+    <link rel="stylesheet" href="../styles/modalUser.css">
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+  />
+    <title>Kenzie Empresas</title>
+</head>
+<body>
+    <header>
+        <div class="conteiner_header">
+            <div>
+                <div class="box__purple"></div>
+                <h1>Kenzie Empresas</h1>
+            </div>   
+            <div class="ferramenta">
+                <img id="menuDeFerramentas"src="../assets/menu_FILL0_wght400_GRAD0_opsz48 1.png" alt="Menu de ferramentas">
+                <a href="" class="botton_login">Logout</a>
+            </div>
+        </div>
+        <div class="conteiner__menu"></div>
+    </header>
+    <main>
+        <dialog class="modal__atulizar--user">
+            <div class="corpo__atulizar--user">
+                <span class="fechar__modal">X</span>
+                <h3>Editar Perfil</h3>
+                <form>
+                    <input id="name" type="text" placeholder="Seu nome" required>
+                    <input id="email" type="email" placeholder="Seu e-mail" required>
+                    <input id="senha" type="password" placeholder="Sua senha" required>
+                    <button class="button__atulizar">Editar perfil</button>
+                </form>
+            </div>
+        </dialog>
+        <div class="conteiner__perfil"></div>
+        <div class="conteiner__body">
+            <div class="title__list"></div>
+            <ul class="lista__department"></ul>
+        </div>
+    </main>
+    <script type="module" src="../scripts/userDash.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>

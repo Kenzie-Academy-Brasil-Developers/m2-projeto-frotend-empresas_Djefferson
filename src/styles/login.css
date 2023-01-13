@@ -1,0 +1,88 @@
+body{
+    background-image: "../assets/Rectangle 6.png" alt="Imagem de fundo""
+}
+main{
+    height: 100%;
+}
+.conteiner__login{
+    width: 100vw;
+    height: 470px;
+    background-color: rgba(255, 255, 255, 95%);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 120px;
+    bottom: 0;
+}
+.conteiner__login > h2{
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 45px;
+    margin-left: 19px;
+}
+.conteiner__login--info{
+    font-size: 16px;
+    margin-top: 15px;
+    margin-left: 19px;
+}
+.conteiner__login > form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    align-items: center;
+    gap: 15px;
+}
+.conteiner__login > form > input, .conteiner__login > form > button{
+    width: 90%;
+    height: 52px;
+}
+.conteiner__login > form > button{
+    background-color: #4200FF;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+.conteiner__login--ou{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    font-size: 16px;
+}
+.conteiner__login > button{
+    width: 90%;
+    height: 52px;
+    background-color: rgba(255, 255, 255, 95%);
+    border-color: #4200FF;
+    color: #4200FF;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    align-items: center;
+    margin-left: 19px;
+}
+#cadastrar{
+    cursor: pointer;
+}
+.img__fundo{
+    width: 100vw;
+    height: 726px; 
+    object-fit: cover;
+}
+@media(min-width:900px){
+    .conteiner__login{
+        width: 506px;
+        height: 489px;
+        margin: 0 auto;
+        top: 300px;
+    }
+    .img__fundo{
+        margin-top: -100px;
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+}

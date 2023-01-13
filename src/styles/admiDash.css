@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+main{
+    margin-top: 170px;
+    display: flex;
+    flex-direction: column;
+}
+.conteiner__deparetamento{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.conteiner__deparetamento > h2, .title__usuario{
+    font-size: 30px;
+    font-weight: bold;
+}
+.conteiner__deparetamento > select{
+    font-size: 20px;
+    border-radius: 15px;
+    width: 282px;
+    padding-left: 45px;
+}
+.button__criar > button{
+    height: 48px;
+    width: 150px;
+    background-color: #4200FF;
+    border: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+}
+.button__criar > button > img{
+    position: absolute;
+    left: 15px;  
+}
+.lista__departamento, .lista__user{
+    height: 385px;
+    overflow-y: scroll;
+    background-color: #F8F8F8;
+    width: 1057px;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    gap: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.lista__departamento > li, .lista__user > li{
+    background-color: white;
+    width: 489px;
+    height: 196px;
+    border-bottom: 1px solid #4200FF;
+}
+.lista__departamento > li > h3, .lista__user > li > h3{
+    font-size: 20px;
+    padding-top: 15px;
+    margin-left: 30px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.lista__departamento > li > p, .lista__user > li > p{
+    font-size: 18px;
+    margin-left: 30px;
+    line-height: 30px;
+}
+.lista__departamento > li > div, .lista__user > li > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.lista__departamento > li > div > img, .lista__user > li > div > img{
+    cursor: pointer;
+}
+.title__usuario{
+    margin: 40px auto;
+}
